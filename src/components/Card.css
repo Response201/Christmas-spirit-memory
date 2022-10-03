@@ -1,0 +1,46 @@
+/* every card */
+
+.cardItem {
+  position: relative;
+}
+
+.cardItem img {
+  width: 100%;
+  height: 100%;
+  max-width: 230px;
+  max-height: 230px;
+  display: block;
+  border-radius: 5px;
+  border: 2px rgb(100, 10, 10) solid;
+  object-fit: cover;
+}
+
+.cardItemHide img {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 230px;
+  max-height: 230px;
+  display: block;
+}
+
+.cardItem .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: all ease-in 0.2s;
+}
+
+.show .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.cardItem .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.show .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}

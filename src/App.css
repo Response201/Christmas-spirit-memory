@@ -1,0 +1,180 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+/* spel */
+
+.dragOchBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  height: 23vh;
+  min-height: 100px;
+}
+
+.btnContainerSpel {
+  margin-top: 15px;
+}
+.Ikon {
+  font-size: 25px;
+  visibility: hidden;
+}
+
+/* spel slut */
+
+.LottieKula {
+  width: 100vw;
+}
+
+.tomte {
+  margin-top: -20px;
+}
+
+.btnContainer {
+  margin-top: 15px;
+}
+
+button {
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+button:hover {
+  background: rgb(97, 155, 76);
+  color: rgb(224, 250, 203);
+  border: 2px solid rgb(224, 250, 203);
+  
+}
+
+.text {
+  padding-top: 5vh;
+  font-size: clamp(40px, 5vw, 90px);
+  height: 50px;
+  text-shadow: 1px 1px 20px white;
+  letter-spacing: 10px;
+  font-family: 'Meddon', cursive;
+  transform: rotateX(20px) rotateY(20px);
+}
+
+.text span {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.cardsContainer {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-content: center;
+  justify-content: center;
+  height: 20vh;
+  min-height: 200px;
+  width: 100vw;
+}
+
+@media (min-width: 767px) {
+  /* i spel */
+
+  .dragOchBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    min-height: 150px;
+  }
+  .cardsContainer {
+    min-height: 300px;
+    height: 35vh;
+    width: 80vw;
+  }
+
+  .Ikon {
+    font-size: 30px;
+    visibility: hidden;
+  }
+
+  /* spel slut */
+  .tomte {
+    margin-top: -25px;
+  }
+
+  button {
+    padding: 10px 42px;
+    font-size: 1em;
+  }
+
+  .text {
+    padding-top: 20px;
+    height: 100px;
+    z-index: 100;
+    letter-spacing: 20px;
+  }
+
+  .text span {
+    display: block;
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+
+  .btnContainer {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* spel */
+  .dragOchBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 5px;
+  }
+  .cardsContainer {
+    min-height: 240px;
+    height: 30vh;
+    width: 50vw;
+  }
+
+  .btnContainerSpel {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .Ikon {
+    font-size: 30px;
+    visibility: visible;
+  }
+
+  /* spel slut */
+
+  .LottieKula {
+    visibility: hidden;
+  }
+
+  .text {
+    padding-top: 0px;
+    font-weight: 600;
+    letter-spacing: 20px;
+  }
+
+  .text span {
+    letter-spacing: 5px;
+  }
+}
